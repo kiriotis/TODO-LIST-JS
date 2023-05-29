@@ -21,9 +21,19 @@ main .main_container {
   width: 1920px;
   background: aqua;
 }
+@media (max-width: 730px) {
+  main .main_container {
+    flex-direction: column;
+  }
+}
 main .main_container .left_side {
   background: wheat;
   width: 20%;
+}
+@media (max-width: 730px) {
+  main .main_container .left_side {
+    width: 100%;
+  }
 }
 main .main_container .left_side .left_side_content {
   align-items: center;
@@ -54,6 +64,11 @@ main .main_container .left_side .left_side_content_list .list_container .setings
 }
 main .main_container .right_side {
   width: 80%;
+}
+@media (max-width: 730px) {
+  main .main_container .right_side {
+    width: 100%;
+  }
 }
 main .main_container .right_side .text_container {
   display: flex;

@@ -12,6 +12,10 @@ main {
   justify-content: center;
 
   .main_container {
+     @media (max-width: 730px) {
+
+           flex-direction: column;
+          }
     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
@@ -23,6 +27,10 @@ main {
     background: aqua;
     .left_side
     {
+       @media (max-width: 730px) {
+
+           width:100% ;
+          }
       background: wheat;
        width: 20%;
       .left_side_content
@@ -97,6 +105,10 @@ main {
     }
     .right_side
     {
+       @media (max-width: 730px) {
+
+           width:100% ;
+          }
       width: 80%;
       .text_container
       {
